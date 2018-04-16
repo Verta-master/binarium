@@ -1,5 +1,4 @@
 .btn {
-//  width: 220px;
   height: 50px;
   position: relative;
   padding-left: 15px;
@@ -45,5 +44,36 @@
   &:active {
     color: #7cd420;
     border-color: #7cd420;
+  }
+}
+
+.btn--black {
+  width: 241px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #4a4a4a;
+  border-color: #d4d4d4;
+  
+  &::after {
+    background-image: url(../img/ic_arrow_black.svg);
+  }
+}
+
+.btn-center {
+  width: 166px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  
+  &--blue {
+    margin-left: 10px;
+    background-color: #0088cc;
+    border-color: #0088cc;
   }
 }
