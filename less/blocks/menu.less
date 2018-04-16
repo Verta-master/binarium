@@ -1,0 +1,40 @@
+.menu__list {
+  margin-left: 35px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu__item {
+  margin-right: 40px;
+}
+
+.menu__link {
+  display: block;
+  position: relative;
+  font-size: 15px;
+  line-height: 26px;
+  color: #4a4a4a;
+  letter-spacing: 0.026em;
+  
+  &::after {
+    display: none;
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #70aed9;
+  }
+  
+  &:hover,
+  &:active,
+  &--active {
+    color: #70aed9;
+    
+    &::after {
+      display: block;
+    }
+  }
+}
