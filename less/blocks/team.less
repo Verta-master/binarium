@@ -76,12 +76,12 @@
   }
 }
 
+.team__deco2,
 .team__deco {
   position: relative;
   
   &::before,
   &::after {
-    display: none;
     content: "";
     position: absolute;
     width: 20px;
@@ -96,8 +96,22 @@
   }
   
   &::after {
-    bottom: -35px;
+    bottom: 20px;
     left: -15px;
+    transform: rotate(-90deg);
+  }
+}
+
+.team__deco2 {
+  &::before {
+    right: -15px;
+    left: auto;
+    transform: rotate(90deg);
+  }
+  
+  &::after {
+    right: -15px;
+    left: auto;
     transform: rotate(180deg);
   }
 }
@@ -107,12 +121,13 @@
   
   .swiper-pagination-bullet {
     outline: none;
-    width: 8px;
+    width: 6px;
     height: 6px;
     margin-left: 5px;
     margin-right: 5px;
     vertical-align: middle;
     background-color: #d8d8d8;
+    opacity: 1;
   }
   .swiper-pagination-bullet-active {
     width: 10px;
