@@ -14,6 +14,7 @@
         <img src="img/logo.png" alt="Logo" width="180" height="37">
       </div>
       <nav class="menu">
+        <button class="menu__btn"></button>
         <ul class="menu__list">
           <li class="menu__item">
             <a href="#" class="menu__link menu__link--active">About binarium</a>
@@ -328,6 +329,7 @@
   <footer class="footer">
     <div class="wrapper">
       <nav class="menu">
+        <button class="menu__btn"></button>
         <ul class="menu__list">
           <li class="menu__item">
             <a href="#" class="menu__link menu__link--active">About binarium</a>
@@ -363,6 +365,7 @@
       preventClicksPropagation: false,
       slidesPerView: 'auto',
     });
+    
     var mySwiper = new Swiper ('.team__slider', {
       pagination: {
         el: '.team__pagination',
@@ -373,15 +376,15 @@
       preventClicksPropagation: false,
       slidesPerView: 'auto',
       spaceBetween: 20,
-//      breakpoints: {
-//        1200: {
-//          spaceBetween: 16,
-//        },
-//        1920: {
-//          spaceBetween: 32,
-//        }
-//      }
     });
+  </script>
+  
+<!-- Mobile menu -->
+  <script>
+    $('.menu__btn').click(function() {
+      $('.menu').toggleClass('menu--opened');
+      $('.menu__list').slideToggle();
+    })
   </script>
 </body>
 </html>
