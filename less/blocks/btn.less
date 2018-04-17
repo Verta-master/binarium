@@ -1,14 +1,13 @@
 .btn {
   height: 50px;
   position: relative;
-  padding-left: 15px;
-  padding-right: 40px;
+  padding-left: 17px;
+  padding-right: 50px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   color: #fff;
   font-size: 15px;
-  font-weight: 700;
   letter-spacing: 0.01em;
   border: 1px solid #fff;
   border-radius: 5px;
@@ -16,10 +15,10 @@
   &::after {
     content: "";
     position: absolute;
-    top: 12px;
+    top: 13px;
     right: 10px;
-    width: 24px;
-    height: 24px;
+    width: 25px;
+    height: 25px;
     background-image: url(../img/ic_keyboard_arrow_right_black_24px.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -30,9 +29,14 @@
     right: 5px;
     transition: ease-out 0.3s;
   }
+  &:hover,
+  &:active {
+    opacity: 0.85;
+  }
 }
 
 .btn--green {
+  min-width: 167px;
   margin-top: auto;
   color: #d4d4d4;
   border-color: #d4d4d4;
@@ -83,5 +87,10 @@
     margin-left: 10px;
     background-color: #0088cc;
     border-color: #0088cc;
+  }
+  
+  &:hover,
+  &:active {
+    opacity: 0.8;
   }
 }
