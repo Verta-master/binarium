@@ -1,6 +1,6 @@
 .map {
   position: relative;
-  min-height: 400px;
+  min-height: 470px;
   background-image: url(../img/map.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,103 +9,7 @@
   iframe {
     display: block;
     width: 100%;
-    height: 400px;
+    height: 470px;
     border: none;
-  }
-}
-
-.map__contacts {
-  width: 944px;
-  padding: 70px;
-  padding-bottom: 95px;
-  position: absolute;
-  z-index: 5;
-  top: 148px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 2px 0 70px 0 rgba(4,4,4,0.08);
-  
-  p {
-    font-size: 12px;
-    max-width: 525px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .map__title {
-    margin-top: 0;
-    margin-bottom: 43px;
-    font-size: 20px;
-    text-align: center;
-    letter-spacing: -0.05em;
-  }
-  
-  .map__item p {
-    font-size: 15px;
-  }
-}
-
-.map__list {
-  margin-top: 90px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.map__item {
-  width: 27%;
-  padding-top: 62px;
-  position: relative;
-  font-size: 15px;
-  line-height: 30px;
-  letter-spacing: 0.01em;
-  text-align: center;
-  
-  address,
-  a {
-    color: #0899f6;
-    font-style: normal;
-  }
-  
-  a:hover,
-  a:active {
-    text-decoration: underline;
-  }
-  
-  p {
-    color: #c0c4cf;
-    margin: 0;
-  }
-  
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  
-  &--mail::before {
-    width: 20px;
-    height: 16px;
-    background-image: url(../img/icon-mail.svg);
-  }
-  
-  &--phone::before {
-    width: 25px;
-    height: 25px;
-    top: -5px;
-    background-image: url(../img/icon-phone.svg);
-  }
-  
-  &--address::before {
-    width: 27px;
-    height: 27px;
-    top: -5px;
-    background-image: url(../img/icon-location-red.svg);
   }
 }

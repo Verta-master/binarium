@@ -1,143 +1,34 @@
 .features {
   padding-top: 95px;
   padding-bottom: 90px;
-  position: relative;
 }
 
-.features__slider {
-  width: 960px;
-  padding: 20px 0;
-  margin-bottom: 30px;
-  margin-top: 43px;
+.features__list {
+  width: 1290px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 125px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.features__slide {
-  width: 480px;
-  min-height: 240px;
-  position: relative;
-  padding: 25px 40px;
-  padding-bottom: 40px;
-  box-sizing: border-box;
+.features__item {
+  width: 265px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
-  border: 1px solid #f7f7f7;
+  align-items: center;
+  text-align: center;
   
-  &::before,
-  &::after {
-    display: none;
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-image: url(../img/icon-deco-blue.png);
-    background-repeat: no-repeat;
-  }
-  
-  &::before {
-    top: 0;
-    left: 0;
-  }
-  
-  &::after {
-    bottom: 0;
-    right: 0;
-    transform: rotate(180deg);
-  }
-  
-  &:hover,
-  &:active {
-    box-shadow: 0 0 37px 7px #f7f7f7;
-    
-    &::before,
-    &::after {
-      display: block;
-    }
+  img {
+    display: block;
+    width: 50px;
+    height: auto;
   }
   
   p {
+    margin-top: 22px;
     max-width: 100%;
-    margin-top: 0;
   }
-  
-  .features__title {
-    margin-top: 20px;
-    margin-bottom: 5px;
-    font-size: 24px;
-    color: #000;
-    letter-spacing: 0.025em;
-    line-height: 1.2;
-  }
-  
-  .features__comission {
-    margin: 0;
-    position: relative;
-    padding-left: 23px;
-    color: #000;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 15px;
-      height: 20px;
-      background-image: url(../img/icon-flag.png);
-      background-repeat: no-repeat;
-    }
-  }
-}
-
-.features__buy {
-  display: block;
-  margin-top: auto;
-  position: relative;
-  padding-left: 55px;
-  color: #0089cc;
-  font-size: 17px;
-  font-weight: 700;
-  
-  &::before {
-    content: "";
-    position: absolute;
-    top: -12px;
-    left: 0;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #0089cc;
-    background-image: url(../img/icon-cart.svg);
-    background-size: 20px 20px;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  &:hover,
-  &:active {
-    opacity: 0.8;
-    text-decoration: underline;
-  }
-}
-
-.features__prev,
-.features__next {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid #ebebeb;
-  background-color: #fff;
-  background-image: url(../img/ic_arrow_blue.svg);
-  background-position: center;
-  background-size: 24px 24px;
-  outline: none;
-}
-
-.features__prev {
-  transform: rotate(180deg);
-  left: -70px;
-}
-
-.features__next {
-  right: -70px;
 }

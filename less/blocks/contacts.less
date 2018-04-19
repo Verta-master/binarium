@@ -1,7 +1,6 @@
 .contacts {
-  min-height: 464px;
-  padding-top: 105px;
-  padding-bottom: 20px;
+  padding-top: 125px;
+  padding-bottom: 125px;
   color: #fff;
   background-color: #464646;
   background-image: url(../img/bg-2.jpg);
@@ -12,11 +11,23 @@
   .title {
     margin-bottom: 20px;
   }
+  
+  .btn-center {
+    margin-top: 20px;
+  }
 }
 
-.contacts__wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.contacts__list {
   margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contacts__item {
+  width: 26%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
